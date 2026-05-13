@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sang Puan dan Rembulan - Prolog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        .moon {
+            position: fixed;
+            top: 50px;
+            right: 10%;
+            width: 80px;
+            height: 80px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            box-shadow: 0 0 40px 10px rgba(241, 245, 249, 0.2);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 100px 20px;
+            padding: 60px;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #f8fafc;
+            letter-spacing: 2px;
+        }
+
+        .novel-text p {
+            font-size: 1.15rem;
+            text-align: justify;
+            margin-bottom: 25px;
+            color: #cbd5e1;
+            text-indent: 30px;
+        }
+
+        .novel-text p:first-of-type {
+            text-indent: 0;
+        }
+
+        .dialog {
+            font-style: italic;
+            color: #94a3b8;
+            display: block;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 60px 0;
+            color: #475569;
+            font-size: 1.5rem;
+            letter-spacing: 15px;
+        }
+
+        .caption-box {
+            border-left: 3px solid #334155;
+            padding-left: 30px;
+            margin-top: 50px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #94a3b8;
+        }
+
+        .caption-box p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: -50px;
+            margin-bottom: 50px;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+                margin: 40px 15px;
+            }
+            h1 { font-size: 1.8rem; }
+            .novel-text p { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="moon"></div>
+
+    <div class="container">
+        <h1>PROLOG</h1>
+        
+        <div class="novel-text">
+            <p>Angin malam berembus leluasa, menyapu wajah sang pemuda tanpa terhalang pilar atau pepohonan. Ia menarik napas panjang, membiarkan udara dingin merasuk hingga ke dada. Jauh di bawah sana, hiruk-pikuk kota hanya terdengar samar, kalah oleh pesona langit tanpa batas tepat di atasnya. Di puncak gedung yang berselimut sepi ini, jajaran gemerlap bintang tampak seperti serpihan cahaya yang setia menemani sang rembulan. Benda langit tersebut menggantung sendirian, seolah menatap lurus ke arahnya.</p>
+
+            <p>Bibirnya menyunggingkan senyum tipis, membiarkan keheningan atap menjadi panggung untuk kata-kata yang selama ini mengendap di relung sukmanya. Ingatannya melayang pada sebuah kebiasaan lama yang tak pernah bisa ia tinggalkan setiap kali memikirkan sang puan.</p>
+
+            <span class="dialog">"Hai, Bulan," gumamnya pelan, memecah kesunyian.</span>
+
+            <p>Ia melangkah mendekati tepian, menumpukan kedua lengan pada pembatas beton. "Masihkah kau mengingat hari kemarin?" tanyanya, seolah hamparan angkasa di hadapannya memiliki telinga untuk mendengar. "Saat aku jatuh cinta pada sosok bak apsari! Aku pasti membuatmu seakan engkau adalah karakter utama dalam setiap bait yang kuucapkan untuknya."</p>
+
+            <p>Gemerlap bintang seakan berkedip bisu. Dipejamkannya mata sejenak sebelum kembali bersuara. </p>
+
+            <span class="dialog">"Rindu, kan?" selorohnya pada angkasa luas, suaranya nyaris tenggelam oleh embusan bayu. "Aku juga rindu."</span>
+
+            <p>Gelak tawanya kemudian pecah. "Hahaha."</p>
+
+            <p>Suara tawa itu mengudara, terdengar hambar sebelum perlahan menguap ditelan pekatnya ratri. Di atas atap ini, ia menertawakan dirinya sendiri—seorang insan klise yang lagi-lagi menjadikan bulan sebagai pelampiasan, hanya karena nirnyali menyampaikan segenap rindu secara langsung.</p>
+
+            <p>Tawa itu mereda, menyisakan embusan napas yang berat. Tangannya perlahan terulur ke udara kosong. Diusapnya ruang hampa di sebelahnya, seolah tengah membelai tempat persinggahan sang puan yang kini hanya tersisa dalam bayangan. Meski kehadiran wanita itu dahulu terasa begitu singkat, namun jejak kenangannya tetap membekas teramat dalam.</p>
+
+            <p>Waktu terus bergulir menembus malam. Awan kelabu perlahan mulai berarak menutupi langit. Setelahnya, sang bulan pun mulai beranjak pergi, bersiap meredup menyembunyikan diri. Menyadari pendengar setianya akan pamit, pemuda itu berbisik parau, lantas menitipkan sebuah pesan kepadanya. Diembuskannya kata-kata itu bersama angin malam, merapal satu harapan terakhir. Harapannya, sang puan segera membalas sapaan rindu itu dari kejauhan.</p>
+        </div>
+
+        <div class="divider">✦ ✦ ✦</div>
+
+        <div class="caption-box">
+            <p>Secercah harap 'tuk kembali,</p>
+            <p>Sebesar ketiadaan 'tuk bersama.</p>
+            <p>Layaknya api yang membakar habis,</p>
+            <p>Seluruh rangkaian kata kala pernah bersama.</p>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cerita Sang Pemuda</footer>
+
+</body>
+</html>
+
